@@ -7,3 +7,11 @@ The main technologies used here are:
 2. Airflow DAGs (to handle interacting with the AI Model)
 3. Apache Kafka to emulate new data coming into the DAG for training/testing
 4. MLFlow for continued monitoring and integration of the model
+
+To run this example you must have Docker Compose installed and run the following
+```
+docker compose -f docker-compose-project.yml build
+docker compose -f docker-compose-project.yml up
+```
+
+Airflow will be running on `localhost:8080` and MLFlow will be running on `localhost:5000`
